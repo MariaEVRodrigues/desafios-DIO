@@ -20,34 +20,21 @@ function calcularVitorias (vitorias, derrotas){
 }
 
 function rankingVitorias (resultado){
-    switch (resultado){
-    case 101:
+   if (resultado >= 101){
     return "Imortal";
-    break;
-    
-    case 91:
+   } else if (resultado > 91 && resultado <= 100){
     return "Lendário";
-    break;
-    
-    case 81:
+   } else if (resultado > 81 && resultado <= 90){ 
     return "Diamante";
-    break;
-    
-    case 51:
+   } else if (resultado > 51 && resultado <= 80){
     return "Ouro";
-    break;
-    
-    case 21:
+   } else if (resultado > 21 && resultado <= 50){
     return "Prata";
-    break;
-    
-    case 11:
+   } else if (resultado > 11 && resultado <= 20){
     return "Bronze";
-    break;
-
-    default:
+   } else {
     return "Ferro";
-}
+   }
 }
     
 let vitorias = 21
